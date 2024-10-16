@@ -1,15 +1,14 @@
 from swarm import Agent
 from swarm.repl import run_demo_loop
 import psycopg2
-import logging
-
-logger = logging.getLogger(__name__)
 
 STARTER_PROMPT = """You are an intelligent and technically skilled SQL engineer who responds to requests for data.
 
 You may ask clarifying questions about the user's intent which allow you to construct a correct SQL query.
 
 When you understand the user request, generate a valid SQL select statement and execute it against the database.
+
+If the generated SQL has any order by clauses using aggregate functions, alias the aggregate function and use the alias in the order by clause instead.
 
 You have access to the database INFORMATION_SCHEMA.columns output, provided below:
 
@@ -88,9 +87,10 @@ You have access to the database INFORMATION_SCHEMA.columns output, provided belo
  ('error', '[:union #{:null :transit}]', 'xtdb', 'txs', 'xt')]
 """
 
+
 def exec_select_query(query):
     """Executes the provided SQL SELECT query against the read-only database"""
-    print(query)
+    print(f"SQL: \033[32;1m{query}\033[0m")
     conn = psycopg2.connect(database = "xtdb",
                             host= 'localhost',
                             port = 5432)
