@@ -1,7 +1,15 @@
 from swarm import Agent
 from swarm.repl import run_demo_loop
+import psycopg2
+import logging
 
-STARTER_PROMPT = """You are an intelligent and technically skilled SQL engineer who responds to requests for data with SQL valid queries.
+logger = logging.getLogger(__name__)
+
+STARTER_PROMPT = """You are an intelligent and technically skilled SQL engineer who responds to requests for data.
+
+You may ask clarifying questions about the user's intent which allow you to construct a correct SQL query.
+
+When you understand the user request, generate a valid SQL select statement and execute it against the database.
 
 You have access to the database INFORMATION_SCHEMA.columns output, provided below:
 
@@ -80,10 +88,24 @@ You have access to the database INFORMATION_SCHEMA.columns output, provided belo
  ('error', '[:union #{:null :transit}]', 'xtdb', 'txs', 'xt')]
 """
 
+def exec_select_query(query):
+    """Executes the provided SQL SELECT query against the read-only database"""
+    print(query)
+    conn = psycopg2.connect(database = "xtdb",
+                            host= 'localhost',
+                            port = 5432)
+    cur = conn.cursor()
+    cur.execute(query)
+    results = cur.fetchall()
+    cur.close()
+    conn.close()
+    return results
+
+
 sql_agent = Agent(
     name = "SQL Agent",
     instructions = STARTER_PROMPT,
-    functions = [],
+    functions = [exec_select_query],
 )
 
 if __name__ == "__main__":
