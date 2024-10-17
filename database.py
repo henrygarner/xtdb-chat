@@ -12,5 +12,5 @@ def get_connection():
 
 def get_schema(conn):
     cursor = conn.cursor()
-    cursor.execute("SELECT * FROM INFORMATION_SCHEMA.columns")
+    cursor.execute("SELECT * FROM information_schema.columns")
     return cursor.fetchall()

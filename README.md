@@ -15,5 +15,6 @@ export OPENAI_API_KEY=<YOUR_KEY_HERE>
 ```
 make install
 make run
+make test
 ```
 

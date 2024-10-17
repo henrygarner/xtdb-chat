@@ -1,0 +1,14 @@
+[
+    {
+	"conversation": [
+	    {"role": "user", "content": "Please provide a random customer ID from the database"}
+	],
+	"function": "None"
+    },
+    {
+	"conversation": [
+	    {"role": "user", "content": "Please provide the minimum customer ID from the database"}
+	],
+	"function": "exec_select_query"
+    }
+]
