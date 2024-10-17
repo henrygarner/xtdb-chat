@@ -1,2 +1,2 @@
-git+ssh://git@github.com/openai/swarm.git
+git+https://github.com/openai/swarm.git
 psycopg2-binary

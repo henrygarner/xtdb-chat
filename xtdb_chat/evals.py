@@ -4,7 +4,7 @@ import uuid
 from agents import SQLAgent
 from swarm import Swarm
 
-sql_test_cases = "evals/sql_cases.json"
+sql_test_cases = "xtdb_chat/evals/sql_cases.json"
 n = 5
 
 def run_function_evals(agent, test_cases, n=1, eval_path=None):
@@ -112,5 +112,5 @@ if __name__ == "__main__":
         sql_agent.agent,
         sql_test_cases,
         n,
-        eval_path="evals/sql_results.json",
+        eval_path="xtdb_chat/evals/sql_results.json",
     )
