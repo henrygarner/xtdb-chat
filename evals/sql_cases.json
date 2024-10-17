@@ -7,7 +7,7 @@
     },
     {
 	"conversation": [
-	    {"role": "user", "content": "Please provide the minimum customer ID from the database"}
+	    {"role": "user", "content": "Please provide an arbitrary customer ID from the database"}
 	],
 	"function": "exec_select_query"
     }
