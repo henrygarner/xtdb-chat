@@ -6,7 +6,7 @@ conn = None
 def get_connection():
     global conn
     if conn is None:
-        conn = psycopg2.connect(database = "xtdb",
+        conn = psycopg2.connect(database = "postgres",
                                 host = os.environ.get('DBHOST', 'localhost'),
                                 port = 5432)
     return conn

@@ -1,4 +1,5 @@
 import database
+import json
 from swarm import Agent
 
 def create_prompt(params):
@@ -8,7 +9,8 @@ def create_prompt(params):
     prompt += "When you understand the user request, generate a valid SQL select statement and execute it against the database.\n"
     prompt += "If the generated SQL has any order by clauses using aggregate functions, alias the aggregate function and use the alias in the order by clause instead.\n"
     prompt += "You shouldn't write non-deterministic queries using RANDOM(), use deterministic sorting whenever you can.\n"
-    prompt += "You have access to the database information_schema.columns output, provided below:\n"
+    prompt += "You have access to the database schema in structured JSON format, provided below.\n"
+    prompt += "Refer to tables using their corresponding \"tableName\" and \"schemaName\" values.\n"
     prompt += str(schema)
     return prompt
 
@@ -29,7 +31,8 @@ def exec_select_query(context_variables, query):
 class SQLAgent:
     def __init__(self):
         conn = database.get_connection()
-        schema = database.get_schema(conn)
+        with open('resources/tables.json', 'r') as file:
+            schema = file.read()
         self.agent = Agent(
             name = "SQL Agent",
             instructions = create_prompt({"schema": schema}),
