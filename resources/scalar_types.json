@@ -1,0 +1,838 @@
+{
+  "bool": {
+    "typeName": "bool",
+    "schemaName": "pg_catalog",
+    "aggregateFunctions": {
+      "every": {
+        "returnType": "bool",
+        "argument_cast_chain": "<empty>"
+      },
+      "bool_or": {
+        "returnType": "bool",
+        "argument_cast_chain": "<empty>"
+      },
+      "bool_and": {
+        "returnType": "bool",
+        "argument_cast_chain": "<empty>"
+      }
+    },
+    "typeRepresentation": null,
+    "comparisonOperators": {
+      "_eq": {
+        "isInfix": true,
+        "argumentType": "bool",
+        "operatorKind": "equal",
+        "operatorName": "=",
+        "argument1_cast_chain": "<empty>",
+        "argument2_cast_chain": "<empty>"
+      },
+      "_gt": {
+        "isInfix": true,
+        "argumentType": "bool",
+        "operatorKind": "custom",
+        "operatorName": ">",
+        "argument1_cast_chain": "<empty>",
+        "argument2_cast_chain": "<empty>"
+      },
+      "_in": {
+        "isInfix": true,
+        "argumentType": "bool",
+        "operatorKind": "in",
+        "operatorName": "IN",
+        "argument1_cast_chain": "",
+        "argument2_cast_chain": ""
+      },
+      "_lt": {
+        "isInfix": true,
+        "argumentType": "bool",
+        "operatorKind": "custom",
+        "operatorName": "<",
+        "argument1_cast_chain": "<empty>",
+        "argument2_cast_chain": "<empty>"
+      },
+      "_gte": {
+        "isInfix": true,
+        "argumentType": "bool",
+        "operatorKind": "custom",
+        "operatorName": ">=",
+        "argument1_cast_chain": "<empty>",
+        "argument2_cast_chain": "<empty>"
+      },
+      "_lte": {
+        "isInfix": true,
+        "argumentType": "bool",
+        "operatorKind": "custom",
+        "operatorName": "<=",
+        "argument1_cast_chain": "<empty>",
+        "argument2_cast_chain": "<empty>"
+      }
+    }
+  },
+  "date": {
+    "typeName": "date",
+    "schemaName": "pg_catalog",
+    "aggregateFunctions": {
+      "max": {
+        "returnType": "date",
+        "argument_cast_chain": "<empty>"
+      },
+      "min": {
+        "returnType": "date",
+        "argument_cast_chain": "<empty>"
+      }
+    },
+    "typeRepresentation": null,
+    "comparisonOperators": {
+      "_eq": {
+        "isInfix": true,
+        "argumentType": "date",
+        "operatorKind": "equal",
+        "operatorName": "=",
+        "argument1_cast_chain": "<empty>",
+        "argument2_cast_chain": "<empty>"
+      },
+      "_gt": {
+        "isInfix": true,
+        "argumentType": "date",
+        "operatorKind": "custom",
+        "operatorName": ">",
+        "argument1_cast_chain": "<empty>",
+        "argument2_cast_chain": "<empty>"
+      },
+      "_in": {
+        "isInfix": true,
+        "argumentType": "date",
+        "operatorKind": "in",
+        "operatorName": "IN",
+        "argument1_cast_chain": "",
+        "argument2_cast_chain": ""
+      },
+      "_lt": {
+        "isInfix": true,
+        "argumentType": "date",
+        "operatorKind": "custom",
+        "operatorName": "<",
+        "argument1_cast_chain": "<empty>",
+        "argument2_cast_chain": "<empty>"
+      },
+      "_gte": {
+        "isInfix": true,
+        "argumentType": "date",
+        "operatorKind": "custom",
+        "operatorName": ">=",
+        "argument1_cast_chain": "<empty>",
+        "argument2_cast_chain": "<empty>"
+      },
+      "_lte": {
+        "isInfix": true,
+        "argumentType": "date",
+        "operatorKind": "custom",
+        "operatorName": "<=",
+        "argument1_cast_chain": "<empty>",
+        "argument2_cast_chain": "<empty>"
+      }
+    }
+  },
+  "int4": {
+    "typeName": "int4",
+    "schemaName": "pg_catalog",
+    "aggregateFunctions": {
+      "avg": {
+        "returnType": "numeric",
+        "argument_cast_chain": "<empty>"
+      },
+      "max": {
+        "returnType": "int4",
+        "argument_cast_chain": "<empty>"
+      },
+      "min": {
+        "returnType": "int4",
+        "argument_cast_chain": "<empty>"
+      },
+      "sum": {
+        "returnType": "int8",
+        "argument_cast_chain": "<empty>"
+      },
+      "bit_or": {
+        "returnType": "int4",
+        "argument_cast_chain": "<empty>"
+      },
+      "stddev": {
+        "returnType": "numeric",
+        "argument_cast_chain": "<empty>"
+      },
+      "bit_and": {
+        "returnType": "int4",
+        "argument_cast_chain": "<empty>"
+      },
+      "bit_xor": {
+        "returnType": "int4",
+        "argument_cast_chain": "<empty>"
+      },
+      "var_pop": {
+        "returnType": "numeric",
+        "argument_cast_chain": "<empty>"
+      },
+      "var_samp": {
+        "returnType": "numeric",
+        "argument_cast_chain": "<empty>"
+      },
+      "variance": {
+        "returnType": "numeric",
+        "argument_cast_chain": "<empty>"
+      },
+      "stddev_pop": {
+        "returnType": "numeric",
+        "argument_cast_chain": "<empty>"
+      },
+      "stddev_samp": {
+        "returnType": "numeric",
+        "argument_cast_chain": "<empty>"
+      }
+    },
+    "typeRepresentation": "integer",
+    "comparisonOperators": {
+      "_eq": {
+        "isInfix": true,
+        "argumentType": "int4",
+        "operatorKind": "equal",
+        "operatorName": "=",
+        "argument1_cast_chain": "<empty>",
+        "argument2_cast_chain": "<empty>"
+      },
+      "_gt": {
+        "isInfix": true,
+        "argumentType": "int4",
+        "operatorKind": "custom",
+        "operatorName": ">",
+        "argument1_cast_chain": "<empty>",
+        "argument2_cast_chain": "<empty>"
+      },
+      "_in": {
+        "isInfix": true,
+        "argumentType": "int4",
+        "operatorKind": "in",
+        "operatorName": "IN",
+        "argument1_cast_chain": "",
+        "argument2_cast_chain": ""
+      },
+      "_lt": {
+        "isInfix": true,
+        "argumentType": "int4",
+        "operatorKind": "custom",
+        "operatorName": "<",
+        "argument1_cast_chain": "<empty>",
+        "argument2_cast_chain": "<empty>"
+      },
+      "_gte": {
+        "isInfix": true,
+        "argumentType": "int4",
+        "operatorKind": "custom",
+        "operatorName": ">=",
+        "argument1_cast_chain": "<empty>",
+        "argument2_cast_chain": "<empty>"
+      },
+      "_lte": {
+        "isInfix": true,
+        "argumentType": "int4",
+        "operatorKind": "custom",
+        "operatorName": "<=",
+        "argument1_cast_chain": "<empty>",
+        "argument2_cast_chain": "<empty>"
+      }
+    }
+  },
+  "int8": {
+    "typeName": "int8",
+    "schemaName": "pg_catalog",
+    "aggregateFunctions": {
+      "avg": {
+        "returnType": "numeric",
+        "argument_cast_chain": "<empty>"
+      },
+      "max": {
+        "returnType": "int8",
+        "argument_cast_chain": "<empty>"
+      },
+      "min": {
+        "returnType": "int8",
+        "argument_cast_chain": "<empty>"
+      },
+      "sum": {
+        "returnType": "numeric",
+        "argument_cast_chain": "<empty>"
+      },
+      "bit_or": {
+        "returnType": "int8",
+        "argument_cast_chain": "<empty>"
+      },
+      "stddev": {
+        "returnType": "numeric",
+        "argument_cast_chain": "<empty>"
+      },
+      "bit_and": {
+        "returnType": "int8",
+        "argument_cast_chain": "<empty>"
+      },
+      "bit_xor": {
+        "returnType": "int8",
+        "argument_cast_chain": "<empty>"
+      },
+      "var_pop": {
+        "returnType": "numeric",
+        "argument_cast_chain": "<empty>"
+      },
+      "var_samp": {
+        "returnType": "numeric",
+        "argument_cast_chain": "<empty>"
+      },
+      "variance": {
+        "returnType": "numeric",
+        "argument_cast_chain": "<empty>"
+      },
+      "stddev_pop": {
+        "returnType": "numeric",
+        "argument_cast_chain": "<empty>"
+      },
+      "stddev_samp": {
+        "returnType": "numeric",
+        "argument_cast_chain": "<empty>"
+      }
+    },
+    "typeRepresentation": null,
+    "comparisonOperators": {
+      "_eq": {
+        "isInfix": true,
+        "argumentType": "int8",
+        "operatorKind": "equal",
+        "operatorName": "=",
+        "argument1_cast_chain": "<empty>",
+        "argument2_cast_chain": "<empty>"
+      },
+      "_gt": {
+        "isInfix": true,
+        "argumentType": "int8",
+        "operatorKind": "custom",
+        "operatorName": ">",
+        "argument1_cast_chain": "<empty>",
+        "argument2_cast_chain": "<empty>"
+      },
+      "_in": {
+        "isInfix": true,
+        "argumentType": "int8",
+        "operatorKind": "in",
+        "operatorName": "IN",
+        "argument1_cast_chain": "",
+        "argument2_cast_chain": ""
+      },
+      "_lt": {
+        "isInfix": true,
+        "argumentType": "int8",
+        "operatorKind": "custom",
+        "operatorName": "<",
+        "argument1_cast_chain": "<empty>",
+        "argument2_cast_chain": "<empty>"
+      },
+      "_gte": {
+        "isInfix": true,
+        "argumentType": "int8",
+        "operatorKind": "custom",
+        "operatorName": ">=",
+        "argument1_cast_chain": "<empty>",
+        "argument2_cast_chain": "<empty>"
+      },
+      "_lte": {
+        "isInfix": true,
+        "argumentType": "int8",
+        "operatorKind": "custom",
+        "operatorName": "<=",
+        "argument1_cast_chain": "<empty>",
+        "argument2_cast_chain": "<empty>"
+      }
+    }
+  },
+  "text": {
+    "typeName": "text",
+    "schemaName": "pg_catalog",
+    "aggregateFunctions": {
+      "max": {
+        "returnType": "text",
+        "argument_cast_chain": "<empty>"
+      },
+      "min": {
+        "returnType": "text",
+        "argument_cast_chain": "<empty>"
+      }
+    },
+    "typeRepresentation": null,
+    "comparisonOperators": {
+      "_eq": {
+        "isInfix": true,
+        "argumentType": "text",
+        "operatorKind": "equal",
+        "operatorName": "=",
+        "argument1_cast_chain": "<empty>",
+        "argument2_cast_chain": "<empty>"
+      },
+      "_gt": {
+        "isInfix": true,
+        "argumentType": "text",
+        "operatorKind": "custom",
+        "operatorName": ">",
+        "argument1_cast_chain": "<empty>",
+        "argument2_cast_chain": "<empty>"
+      },
+      "_in": {
+        "isInfix": true,
+        "argumentType": "text",
+        "operatorKind": "in",
+        "operatorName": "IN",
+        "argument1_cast_chain": "",
+        "argument2_cast_chain": ""
+      },
+      "_lt": {
+        "isInfix": true,
+        "argumentType": "text",
+        "operatorKind": "custom",
+        "operatorName": "<",
+        "argument1_cast_chain": "<empty>",
+        "argument2_cast_chain": "<empty>"
+      },
+      "_gte": {
+        "isInfix": true,
+        "argumentType": "text",
+        "operatorKind": "custom",
+        "operatorName": ">=",
+        "argument1_cast_chain": "<empty>",
+        "argument2_cast_chain": "<empty>"
+      },
+      "_lte": {
+        "isInfix": true,
+        "argumentType": "text",
+        "operatorKind": "custom",
+        "operatorName": "<=",
+        "argument1_cast_chain": "<empty>",
+        "argument2_cast_chain": "<empty>"
+      },
+      "_like": {
+        "isInfix": true,
+        "argumentType": "text",
+        "operatorKind": "custom",
+        "operatorName": "~~",
+        "argument1_cast_chain": "<empty>",
+        "argument2_cast_chain": "<empty>"
+      },
+      "_ilike": {
+        "isInfix": true,
+        "argumentType": "text",
+        "operatorKind": "custom",
+        "operatorName": "~~*",
+        "argument1_cast_chain": "<empty>",
+        "argument2_cast_chain": "<empty>"
+      },
+      "_nlike": {
+        "isInfix": true,
+        "argumentType": "text",
+        "operatorKind": "custom",
+        "operatorName": "!~~",
+        "argument1_cast_chain": "<empty>",
+        "argument2_cast_chain": "<empty>"
+      },
+      "_regex": {
+        "isInfix": true,
+        "argumentType": "text",
+        "operatorKind": "custom",
+        "operatorName": "~",
+        "argument1_cast_chain": "<empty>",
+        "argument2_cast_chain": "<empty>"
+      },
+      "_iregex": {
+        "isInfix": true,
+        "argumentType": "text",
+        "operatorKind": "custom",
+        "operatorName": "~*",
+        "argument1_cast_chain": "<empty>",
+        "argument2_cast_chain": "<empty>"
+      },
+      "_nilike": {
+        "isInfix": true,
+        "argumentType": "text",
+        "operatorKind": "custom",
+        "operatorName": "!~~*",
+        "argument1_cast_chain": "<empty>",
+        "argument2_cast_chain": "<empty>"
+      },
+      "_nregex": {
+        "isInfix": true,
+        "argumentType": "text",
+        "operatorKind": "custom",
+        "operatorName": "!~",
+        "argument1_cast_chain": "<empty>",
+        "argument2_cast_chain": "<empty>"
+      },
+      "_niregex": {
+        "isInfix": true,
+        "argumentType": "text",
+        "operatorKind": "custom",
+        "operatorName": "!~*",
+        "argument1_cast_chain": "<empty>",
+        "argument2_cast_chain": "<empty>"
+      }
+    }
+  },
+  "bpchar": {
+    "typeName": "bpchar",
+    "schemaName": "pg_catalog",
+    "aggregateFunctions": {
+      "max": {
+        "returnType": "bpchar",
+        "argument_cast_chain": "<empty>"
+      },
+      "min": {
+        "returnType": "bpchar",
+        "argument_cast_chain": "<empty>"
+      }
+    },
+    "typeRepresentation": null,
+    "comparisonOperators": {
+      "_eq": {
+        "isInfix": true,
+        "argumentType": "bpchar",
+        "operatorKind": "equal",
+        "operatorName": "=",
+        "argument1_cast_chain": "<empty>",
+        "argument2_cast_chain": "<empty>"
+      },
+      "_gt": {
+        "isInfix": true,
+        "argumentType": "bpchar",
+        "operatorKind": "custom",
+        "operatorName": ">",
+        "argument1_cast_chain": "<empty>",
+        "argument2_cast_chain": "<empty>"
+      },
+      "_in": {
+        "isInfix": true,
+        "argumentType": "bpchar",
+        "operatorKind": "in",
+        "operatorName": "IN",
+        "argument1_cast_chain": "",
+        "argument2_cast_chain": ""
+      },
+      "_lt": {
+        "isInfix": true,
+        "argumentType": "bpchar",
+        "operatorKind": "custom",
+        "operatorName": "<",
+        "argument1_cast_chain": "<empty>",
+        "argument2_cast_chain": "<empty>"
+      },
+      "_gte": {
+        "isInfix": true,
+        "argumentType": "bpchar",
+        "operatorKind": "custom",
+        "operatorName": ">=",
+        "argument1_cast_chain": "<empty>",
+        "argument2_cast_chain": "<empty>"
+      },
+      "_lte": {
+        "isInfix": true,
+        "argumentType": "bpchar",
+        "operatorKind": "custom",
+        "operatorName": "<=",
+        "argument1_cast_chain": "<empty>",
+        "argument2_cast_chain": "<empty>"
+      },
+      "_like": {
+        "isInfix": true,
+        "argumentType": "text",
+        "operatorKind": "custom",
+        "operatorName": "~~",
+        "argument1_cast_chain": "<empty>",
+        "argument2_cast_chain": "<empty>"
+      },
+      "_ilike": {
+        "isInfix": true,
+        "argumentType": "text",
+        "operatorKind": "custom",
+        "operatorName": "~~*",
+        "argument1_cast_chain": "<empty>",
+        "argument2_cast_chain": "<empty>"
+      },
+      "_nlike": {
+        "isInfix": true,
+        "argumentType": "text",
+        "operatorKind": "custom",
+        "operatorName": "!~~",
+        "argument1_cast_chain": "<empty>",
+        "argument2_cast_chain": "<empty>"
+      },
+      "_regex": {
+        "isInfix": true,
+        "argumentType": "text",
+        "operatorKind": "custom",
+        "operatorName": "~",
+        "argument1_cast_chain": "<empty>",
+        "argument2_cast_chain": "<empty>"
+      },
+      "_iregex": {
+        "isInfix": true,
+        "argumentType": "text",
+        "operatorKind": "custom",
+        "operatorName": "~*",
+        "argument1_cast_chain": "<empty>",
+        "argument2_cast_chain": "<empty>"
+      },
+      "_nilike": {
+        "isInfix": true,
+        "argumentType": "text",
+        "operatorKind": "custom",
+        "operatorName": "!~~*",
+        "argument1_cast_chain": "<empty>",
+        "argument2_cast_chain": "<empty>"
+      },
+      "_nregex": {
+        "isInfix": true,
+        "argumentType": "text",
+        "operatorKind": "custom",
+        "operatorName": "!~",
+        "argument1_cast_chain": "<empty>",
+        "argument2_cast_chain": "<empty>"
+      },
+      "_niregex": {
+        "isInfix": true,
+        "argumentType": "text",
+        "operatorKind": "custom",
+        "operatorName": "!~*",
+        "argument1_cast_chain": "<empty>",
+        "argument2_cast_chain": "<empty>"
+      }
+    }
+  },
+  "numeric": {
+    "typeName": "numeric",
+    "schemaName": "pg_catalog",
+    "aggregateFunctions": {
+      "avg": {
+        "returnType": "numeric",
+        "argument_cast_chain": "<empty>"
+      },
+      "max": {
+        "returnType": "numeric",
+        "argument_cast_chain": "<empty>"
+      },
+      "min": {
+        "returnType": "numeric",
+        "argument_cast_chain": "<empty>"
+      },
+      "sum": {
+        "returnType": "numeric",
+        "argument_cast_chain": "<empty>"
+      },
+      "stddev": {
+        "returnType": "numeric",
+        "argument_cast_chain": "<empty>"
+      },
+      "var_pop": {
+        "returnType": "numeric",
+        "argument_cast_chain": "<empty>"
+      },
+      "var_samp": {
+        "returnType": "numeric",
+        "argument_cast_chain": "<empty>"
+      },
+      "variance": {
+        "returnType": "numeric",
+        "argument_cast_chain": "<empty>"
+      },
+      "stddev_pop": {
+        "returnType": "numeric",
+        "argument_cast_chain": "<empty>"
+      },
+      "stddev_samp": {
+        "returnType": "numeric",
+        "argument_cast_chain": "<empty>"
+      }
+    },
+    "typeRepresentation": null,
+    "comparisonOperators": {
+      "_eq": {
+        "isInfix": true,
+        "argumentType": "numeric",
+        "operatorKind": "equal",
+        "operatorName": "=",
+        "argument1_cast_chain": "<empty>",
+        "argument2_cast_chain": "<empty>"
+      },
+      "_gt": {
+        "isInfix": true,
+        "argumentType": "numeric",
+        "operatorKind": "custom",
+        "operatorName": ">",
+        "argument1_cast_chain": "<empty>",
+        "argument2_cast_chain": "<empty>"
+      },
+      "_in": {
+        "isInfix": true,
+        "argumentType": "numeric",
+        "operatorKind": "in",
+        "operatorName": "IN",
+        "argument1_cast_chain": "",
+        "argument2_cast_chain": ""
+      },
+      "_lt": {
+        "isInfix": true,
+        "argumentType": "numeric",
+        "operatorKind": "custom",
+        "operatorName": "<",
+        "argument1_cast_chain": "<empty>",
+        "argument2_cast_chain": "<empty>"
+      },
+      "_gte": {
+        "isInfix": true,
+        "argumentType": "numeric",
+        "operatorKind": "custom",
+        "operatorName": ">=",
+        "argument1_cast_chain": "<empty>",
+        "argument2_cast_chain": "<empty>"
+      },
+      "_lte": {
+        "isInfix": true,
+        "argumentType": "numeric",
+        "operatorKind": "custom",
+        "operatorName": "<=",
+        "argument1_cast_chain": "<empty>",
+        "argument2_cast_chain": "<empty>"
+      }
+    }
+  },
+  "varchar": {
+    "typeName": "varchar",
+    "schemaName": "pg_catalog",
+    "aggregateFunctions": {
+      "max": {
+        "returnType": "text",
+        "argument_cast_chain": "character varying -> text"
+      },
+      "min": {
+        "returnType": "text",
+        "argument_cast_chain": "character varying -> text"
+      }
+    },
+    "typeRepresentation": null,
+    "comparisonOperators": {
+      "_eq": {
+        "isInfix": true,
+        "argumentType": "varchar",
+        "operatorKind": "equal",
+        "operatorName": "=",
+        "argument1_cast_chain": "character varying -> text",
+        "argument2_cast_chain": "character varying -> text"
+      },
+      "_gt": {
+        "isInfix": true,
+        "argumentType": "varchar",
+        "operatorKind": "custom",
+        "operatorName": ">",
+        "argument1_cast_chain": "character varying -> text",
+        "argument2_cast_chain": "character varying -> text"
+      },
+      "_in": {
+        "isInfix": true,
+        "argumentType": "varchar",
+        "operatorKind": "in",
+        "operatorName": "IN",
+        "argument1_cast_chain": "",
+        "argument2_cast_chain": ""
+      },
+      "_lt": {
+        "isInfix": true,
+        "argumentType": "varchar",
+        "operatorKind": "custom",
+        "operatorName": "<",
+        "argument1_cast_chain": "character varying -> text",
+        "argument2_cast_chain": "character varying -> text"
+      },
+      "_gte": {
+        "isInfix": true,
+        "argumentType": "varchar",
+        "operatorKind": "custom",
+        "operatorName": ">=",
+        "argument1_cast_chain": "character varying -> text",
+        "argument2_cast_chain": "character varying -> text"
+      },
+      "_lte": {
+        "isInfix": true,
+        "argumentType": "varchar",
+        "operatorKind": "custom",
+        "operatorName": "<=",
+        "argument1_cast_chain": "character varying -> text",
+        "argument2_cast_chain": "character varying -> text"
+      },
+      "_like": {
+        "isInfix": true,
+        "argumentType": "varchar",
+        "operatorKind": "custom",
+        "operatorName": "~~",
+        "argument1_cast_chain": "character varying -> text",
+        "argument2_cast_chain": "character varying -> text"
+      },
+      "_ilike": {
+        "isInfix": true,
+        "argumentType": "varchar",
+        "operatorKind": "custom",
+        "operatorName": "~~*",
+        "argument1_cast_chain": "character varying -> text",
+        "argument2_cast_chain": "character varying -> text"
+      },
+      "_nlike": {
+        "isInfix": true,
+        "argumentType": "varchar",
+        "operatorKind": "custom",
+        "operatorName": "!~~",
+        "argument1_cast_chain": "character varying -> text",
+        "argument2_cast_chain": "character varying -> text"
+      },
+      "_regex": {
+        "isInfix": true,
+        "argumentType": "varchar",
+        "operatorKind": "custom",
+        "operatorName": "~",
+        "argument1_cast_chain": "character varying -> text",
+        "argument2_cast_chain": "character varying -> text"
+      },
+      "_iregex": {
+        "isInfix": true,
+        "argumentType": "varchar",
+        "operatorKind": "custom",
+        "operatorName": "~*",
+        "argument1_cast_chain": "character varying -> text",
+        "argument2_cast_chain": "character varying -> text"
+      },
+      "_nilike": {
+        "isInfix": true,
+        "argumentType": "varchar",
+        "operatorKind": "custom",
+        "operatorName": "!~~*",
+        "argument1_cast_chain": "character varying -> text",
+        "argument2_cast_chain": "character varying -> text"
+      },
+      "_nregex": {
+        "isInfix": true,
+        "argumentType": "varchar",
+        "operatorKind": "custom",
+        "operatorName": "!~",
+        "argument1_cast_chain": "character varying -> text",
+        "argument2_cast_chain": "character varying -> text"
+      },
+      "_niregex": {
+        "isInfix": true,
+        "argumentType": "varchar",
+        "operatorKind": "custom",
+        "operatorName": "!~*",
+        "argument1_cast_chain": "character varying -> text",
+        "argument2_cast_chain": "character varying -> text"
+      }
+    }
+  }
+}

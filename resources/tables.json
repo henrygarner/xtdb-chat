@@ -1,0 +1,861 @@
+{
+  "xtdb_part": {
+    "columns": {
+      "p_mfgr": {
+        "name": "p_mfgr",
+        "type": {
+          "scalarType": "bpchar"
+        },
+        "nullable": "nullable",
+        "hasDefault": "noDefault",
+        "isIdentity": "notIdentity",
+        "description": null,
+        "isGenerated": "notGenerated"
+      },
+      "p_name": {
+        "name": "p_name",
+        "type": {
+          "scalarType": "varchar"
+        },
+        "nullable": "nullable",
+        "hasDefault": "noDefault",
+        "isIdentity": "notIdentity",
+        "description": null,
+        "isGenerated": "notGenerated"
+      },
+      "p_size": {
+        "name": "p_size",
+        "type": {
+          "scalarType": "int4"
+        },
+        "nullable": "nullable",
+        "hasDefault": "noDefault",
+        "isIdentity": "notIdentity",
+        "description": null,
+        "isGenerated": "notGenerated"
+      },
+      "p_type": {
+        "name": "p_type",
+        "type": {
+          "scalarType": "varchar"
+        },
+        "nullable": "nullable",
+        "hasDefault": "noDefault",
+        "isIdentity": "notIdentity",
+        "description": null,
+        "isGenerated": "notGenerated"
+      },
+      "p_brand": {
+        "name": "p_brand",
+        "type": {
+          "scalarType": "bpchar"
+        },
+        "nullable": "nullable",
+        "hasDefault": "noDefault",
+        "isIdentity": "notIdentity",
+        "description": null,
+        "isGenerated": "notGenerated"
+      },
+      "p_dummy": {
+        "name": "p_dummy",
+        "type": {
+          "scalarType": "varchar"
+        },
+        "nullable": "nullable",
+        "hasDefault": "noDefault",
+        "isIdentity": "notIdentity",
+        "description": null,
+        "isGenerated": "notGenerated"
+      },
+      "p_comment": {
+        "name": "p_comment",
+        "type": {
+          "scalarType": "varchar"
+        },
+        "nullable": "nullable",
+        "hasDefault": "noDefault",
+        "isIdentity": "notIdentity",
+        "description": null,
+        "isGenerated": "notGenerated"
+      },
+      "p_partkey": {
+        "name": "p_partkey",
+        "type": {
+          "scalarType": "int4"
+        },
+        "nullable": "nonNullable",
+        "hasDefault": "noDefault",
+        "isIdentity": "notIdentity",
+        "description": null,
+        "isGenerated": "notGenerated"
+      },
+      "p_container": {
+        "name": "p_container",
+        "type": {
+          "scalarType": "bpchar"
+        },
+        "nullable": "nullable",
+        "hasDefault": "noDefault",
+        "isIdentity": "notIdentity",
+        "description": null,
+        "isGenerated": "notGenerated"
+      },
+      "p_retailprice": {
+        "name": "p_retailprice",
+        "type": {
+          "scalarType": "numeric"
+        },
+        "nullable": "nullable",
+        "hasDefault": "noDefault",
+        "isIdentity": "notIdentity",
+        "description": null,
+        "isGenerated": "notGenerated"
+      }
+    },
+    "tableName": "part",
+    "schemaName": "xtdb",
+    "description": null,
+    "foreignRelations": {},
+    "uniquenessConstraints": {
+      "part_pkey": [
+        "p_partkey"
+      ]
+    }
+  },
+  "xtdb_nation": {
+    "columns": {
+      "n_name": {
+        "name": "n_name",
+        "type": {
+          "scalarType": "bpchar"
+        },
+        "nullable": "nullable",
+        "hasDefault": "noDefault",
+        "isIdentity": "notIdentity",
+        "description": null,
+        "isGenerated": "notGenerated"
+      },
+      "n_dummy": {
+        "name": "n_dummy",
+        "type": {
+          "scalarType": "varchar"
+        },
+        "nullable": "nullable",
+        "hasDefault": "noDefault",
+        "isIdentity": "notIdentity",
+        "description": null,
+        "isGenerated": "notGenerated"
+      },
+      "n_comment": {
+        "name": "n_comment",
+        "type": {
+          "scalarType": "varchar"
+        },
+        "nullable": "nullable",
+        "hasDefault": "noDefault",
+        "isIdentity": "notIdentity",
+        "description": null,
+        "isGenerated": "notGenerated"
+      },
+      "n_nationkey": {
+        "name": "n_nationkey",
+        "type": {
+          "scalarType": "int4"
+        },
+        "nullable": "nonNullable",
+        "hasDefault": "noDefault",
+        "isIdentity": "notIdentity",
+        "description": null,
+        "isGenerated": "notGenerated"
+      },
+      "n_regionkey": {
+        "name": "n_regionkey",
+        "type": {
+          "scalarType": "int4"
+        },
+        "nullable": "nullable",
+        "hasDefault": "noDefault",
+        "isIdentity": "notIdentity",
+        "description": null,
+        "isGenerated": "notGenerated"
+      }
+    },
+    "tableName": "nation",
+    "schemaName": "xtdb",
+    "description": null,
+    "foreignRelations": {},
+    "uniquenessConstraints": {
+      "nation_pkey": [
+        "n_nationkey"
+      ]
+    }
+  },
+  "xtdb_orders": {
+    "columns": {
+      "o_clerk": {
+        "name": "o_clerk",
+        "type": {
+          "scalarType": "bpchar"
+        },
+        "nullable": "nullable",
+        "hasDefault": "noDefault",
+        "isIdentity": "notIdentity",
+        "description": null,
+        "isGenerated": "notGenerated"
+      },
+      "o_dummy": {
+        "name": "o_dummy",
+        "type": {
+          "scalarType": "varchar"
+        },
+        "nullable": "nullable",
+        "hasDefault": "noDefault",
+        "isIdentity": "notIdentity",
+        "description": null,
+        "isGenerated": "notGenerated"
+      },
+      "o_comment": {
+        "name": "o_comment",
+        "type": {
+          "scalarType": "varchar"
+        },
+        "nullable": "nullable",
+        "hasDefault": "noDefault",
+        "isIdentity": "notIdentity",
+        "description": null,
+        "isGenerated": "notGenerated"
+      },
+      "o_custkey": {
+        "name": "o_custkey",
+        "type": {
+          "scalarType": "int4"
+        },
+        "nullable": "nullable",
+        "hasDefault": "noDefault",
+        "isIdentity": "notIdentity",
+        "description": null,
+        "isGenerated": "notGenerated"
+      },
+      "o_orderkey": {
+        "name": "o_orderkey",
+        "type": {
+          "scalarType": "int4"
+        },
+        "nullable": "nonNullable",
+        "hasDefault": "noDefault",
+        "isIdentity": "notIdentity",
+        "description": null,
+        "isGenerated": "notGenerated"
+      },
+      "o_orderdate": {
+        "name": "o_orderdate",
+        "type": {
+          "scalarType": "date"
+        },
+        "nullable": "nullable",
+        "hasDefault": "noDefault",
+        "isIdentity": "notIdentity",
+        "description": null,
+        "isGenerated": "notGenerated"
+      },
+      "o_totalprice": {
+        "name": "o_totalprice",
+        "type": {
+          "scalarType": "numeric"
+        },
+        "nullable": "nullable",
+        "hasDefault": "noDefault",
+        "isIdentity": "notIdentity",
+        "description": null,
+        "isGenerated": "notGenerated"
+      },
+      "o_orderstatus": {
+        "name": "o_orderstatus",
+        "type": {
+          "scalarType": "bpchar"
+        },
+        "nullable": "nullable",
+        "hasDefault": "noDefault",
+        "isIdentity": "notIdentity",
+        "description": null,
+        "isGenerated": "notGenerated"
+      },
+      "o_shippriority": {
+        "name": "o_shippriority",
+        "type": {
+          "scalarType": "int4"
+        },
+        "nullable": "nullable",
+        "hasDefault": "noDefault",
+        "isIdentity": "notIdentity",
+        "description": null,
+        "isGenerated": "notGenerated"
+      },
+      "o_orderpriority": {
+        "name": "o_orderpriority",
+        "type": {
+          "scalarType": "bpchar"
+        },
+        "nullable": "nullable",
+        "hasDefault": "noDefault",
+        "isIdentity": "notIdentity",
+        "description": null,
+        "isGenerated": "notGenerated"
+      }
+    },
+    "tableName": "orders",
+    "schemaName": "xtdb",
+    "description": null,
+    "foreignRelations": {},
+    "uniquenessConstraints": {
+      "orders_pkey": [
+        "o_orderkey"
+      ]
+    }
+  },
+  "xtdb_region": {
+    "columns": {
+      "r_name": {
+        "name": "r_name",
+        "type": {
+          "scalarType": "bpchar"
+        },
+        "nullable": "nullable",
+        "hasDefault": "noDefault",
+        "isIdentity": "notIdentity",
+        "description": null,
+        "isGenerated": "notGenerated"
+      },
+      "r_dummy": {
+        "name": "r_dummy",
+        "type": {
+          "scalarType": "varchar"
+        },
+        "nullable": "nullable",
+        "hasDefault": "noDefault",
+        "isIdentity": "notIdentity",
+        "description": null,
+        "isGenerated": "notGenerated"
+      },
+      "r_comment": {
+        "name": "r_comment",
+        "type": {
+          "scalarType": "varchar"
+        },
+        "nullable": "nullable",
+        "hasDefault": "noDefault",
+        "isIdentity": "notIdentity",
+        "description": null,
+        "isGenerated": "notGenerated"
+      },
+      "r_regionkey": {
+        "name": "r_regionkey",
+        "type": {
+          "scalarType": "int4"
+        },
+        "nullable": "nonNullable",
+        "hasDefault": "noDefault",
+        "isIdentity": "notIdentity",
+        "description": null,
+        "isGenerated": "notGenerated"
+      }
+    },
+    "tableName": "region",
+    "schemaName": "xtdb",
+    "description": null,
+    "foreignRelations": {},
+    "uniquenessConstraints": {
+      "region_pkey": [
+        "r_regionkey"
+      ]
+    }
+  },
+  "xtdb_customer": {
+    "columns": {
+      "c_name": {
+        "name": "c_name",
+        "type": {
+          "scalarType": "varchar"
+        },
+        "nullable": "nullable",
+        "hasDefault": "noDefault",
+        "isIdentity": "notIdentity",
+        "description": null,
+        "isGenerated": "notGenerated"
+      },
+      "c_dummy": {
+        "name": "c_dummy",
+        "type": {
+          "scalarType": "varchar"
+        },
+        "nullable": "nullable",
+        "hasDefault": "noDefault",
+        "isIdentity": "notIdentity",
+        "description": null,
+        "isGenerated": "notGenerated"
+      },
+      "c_phone": {
+        "name": "c_phone",
+        "type": {
+          "scalarType": "bpchar"
+        },
+        "nullable": "nullable",
+        "hasDefault": "noDefault",
+        "isIdentity": "notIdentity",
+        "description": null,
+        "isGenerated": "notGenerated"
+      },
+      "c_acctbal": {
+        "name": "c_acctbal",
+        "type": {
+          "scalarType": "numeric"
+        },
+        "nullable": "nullable",
+        "hasDefault": "noDefault",
+        "isIdentity": "notIdentity",
+        "description": null,
+        "isGenerated": "notGenerated"
+      },
+      "c_address": {
+        "name": "c_address",
+        "type": {
+          "scalarType": "varchar"
+        },
+        "nullable": "nullable",
+        "hasDefault": "noDefault",
+        "isIdentity": "notIdentity",
+        "description": null,
+        "isGenerated": "notGenerated"
+      },
+      "c_comment": {
+        "name": "c_comment",
+        "type": {
+          "scalarType": "varchar"
+        },
+        "nullable": "nullable",
+        "hasDefault": "noDefault",
+        "isIdentity": "notIdentity",
+        "description": null,
+        "isGenerated": "notGenerated"
+      },
+      "c_custkey": {
+        "name": "c_custkey",
+        "type": {
+          "scalarType": "int4"
+        },
+        "nullable": "nonNullable",
+        "hasDefault": "noDefault",
+        "isIdentity": "notIdentity",
+        "description": null,
+        "isGenerated": "notGenerated"
+      },
+      "c_nationkey": {
+        "name": "c_nationkey",
+        "type": {
+          "scalarType": "int4"
+        },
+        "nullable": "nullable",
+        "hasDefault": "noDefault",
+        "isIdentity": "notIdentity",
+        "description": null,
+        "isGenerated": "notGenerated"
+      },
+      "c_mktsegment": {
+        "name": "c_mktsegment",
+        "type": {
+          "scalarType": "bpchar"
+        },
+        "nullable": "nullable",
+        "hasDefault": "noDefault",
+        "isIdentity": "notIdentity",
+        "description": null,
+        "isGenerated": "notGenerated"
+      }
+    },
+    "tableName": "customer",
+    "schemaName": "xtdb",
+    "description": null,
+    "foreignRelations": {},
+    "uniquenessConstraints": {
+      "customer_pkey": [
+        "c_custkey"
+      ]
+    }
+  },
+  "xtdb_lineitem": {
+    "columns": {
+      "l_tax": {
+        "name": "l_tax",
+        "type": {
+          "scalarType": "numeric"
+        },
+        "nullable": "nullable",
+        "hasDefault": "noDefault",
+        "isIdentity": "notIdentity",
+        "description": null,
+        "isGenerated": "notGenerated"
+      },
+      "l_dummy": {
+        "name": "l_dummy",
+        "type": {
+          "scalarType": "varchar"
+        },
+        "nullable": "nullable",
+        "hasDefault": "noDefault",
+        "isIdentity": "notIdentity",
+        "description": null,
+        "isGenerated": "notGenerated"
+      },
+      "l_comment": {
+        "name": "l_comment",
+        "type": {
+          "scalarType": "varchar"
+        },
+        "nullable": "nullable",
+        "hasDefault": "noDefault",
+        "isIdentity": "notIdentity",
+        "description": null,
+        "isGenerated": "notGenerated"
+      },
+      "l_partkey": {
+        "name": "l_partkey",
+        "type": {
+          "scalarType": "int4"
+        },
+        "nullable": "nullable",
+        "hasDefault": "noDefault",
+        "isIdentity": "notIdentity",
+        "description": null,
+        "isGenerated": "notGenerated"
+      },
+      "l_suppkey": {
+        "name": "l_suppkey",
+        "type": {
+          "scalarType": "int4"
+        },
+        "nullable": "nullable",
+        "hasDefault": "noDefault",
+        "isIdentity": "notIdentity",
+        "description": null,
+        "isGenerated": "notGenerated"
+      },
+      "l_discount": {
+        "name": "l_discount",
+        "type": {
+          "scalarType": "numeric"
+        },
+        "nullable": "nullable",
+        "hasDefault": "noDefault",
+        "isIdentity": "notIdentity",
+        "description": null,
+        "isGenerated": "notGenerated"
+      },
+      "l_orderkey": {
+        "name": "l_orderkey",
+        "type": {
+          "scalarType": "int4"
+        },
+        "nullable": "nullable",
+        "hasDefault": "noDefault",
+        "isIdentity": "notIdentity",
+        "description": null,
+        "isGenerated": "notGenerated"
+      },
+      "l_quantity": {
+        "name": "l_quantity",
+        "type": {
+          "scalarType": "numeric"
+        },
+        "nullable": "nullable",
+        "hasDefault": "noDefault",
+        "isIdentity": "notIdentity",
+        "description": null,
+        "isGenerated": "notGenerated"
+      },
+      "l_shipdate": {
+        "name": "l_shipdate",
+        "type": {
+          "scalarType": "date"
+        },
+        "nullable": "nullable",
+        "hasDefault": "noDefault",
+        "isIdentity": "notIdentity",
+        "description": null,
+        "isGenerated": "notGenerated"
+      },
+      "l_shipmode": {
+        "name": "l_shipmode",
+        "type": {
+          "scalarType": "bpchar"
+        },
+        "nullable": "nullable",
+        "hasDefault": "noDefault",
+        "isIdentity": "notIdentity",
+        "description": null,
+        "isGenerated": "notGenerated"
+      },
+      "l_commitdate": {
+        "name": "l_commitdate",
+        "type": {
+          "scalarType": "date"
+        },
+        "nullable": "nullable",
+        "hasDefault": "noDefault",
+        "isIdentity": "notIdentity",
+        "description": null,
+        "isGenerated": "notGenerated"
+      },
+      "l_linenumber": {
+        "name": "l_linenumber",
+        "type": {
+          "scalarType": "int4"
+        },
+        "nullable": "nullable",
+        "hasDefault": "noDefault",
+        "isIdentity": "notIdentity",
+        "description": null,
+        "isGenerated": "notGenerated"
+      },
+      "l_linestatus": {
+        "name": "l_linestatus",
+        "type": {
+          "scalarType": "bpchar"
+        },
+        "nullable": "nullable",
+        "hasDefault": "noDefault",
+        "isIdentity": "notIdentity",
+        "description": null,
+        "isGenerated": "notGenerated"
+      },
+      "l_returnflag": {
+        "name": "l_returnflag",
+        "type": {
+          "scalarType": "bpchar"
+        },
+        "nullable": "nullable",
+        "hasDefault": "noDefault",
+        "isIdentity": "notIdentity",
+        "description": null,
+        "isGenerated": "notGenerated"
+      },
+      "l_receiptdate": {
+        "name": "l_receiptdate",
+        "type": {
+          "scalarType": "date"
+        },
+        "nullable": "nullable",
+        "hasDefault": "noDefault",
+        "isIdentity": "notIdentity",
+        "description": null,
+        "isGenerated": "notGenerated"
+      },
+      "l_shipinstruct": {
+        "name": "l_shipinstruct",
+        "type": {
+          "scalarType": "bpchar"
+        },
+        "nullable": "nullable",
+        "hasDefault": "noDefault",
+        "isIdentity": "notIdentity",
+        "description": null,
+        "isGenerated": "notGenerated"
+      },
+      "l_extendedprice": {
+        "name": "l_extendedprice",
+        "type": {
+          "scalarType": "numeric"
+        },
+        "nullable": "nullable",
+        "hasDefault": "noDefault",
+        "isIdentity": "notIdentity",
+        "description": null,
+        "isGenerated": "notGenerated"
+      }
+    },
+    "tableName": "lineitem",
+    "schemaName": "xtdb",
+    "description": null,
+    "foreignRelations": {},
+    "uniquenessConstraints": {}
+  },
+  "xtdb_partsupp": {
+    "columns": {
+      "ps_dummy": {
+        "name": "ps_dummy",
+        "type": {
+          "scalarType": "varchar"
+        },
+        "nullable": "nullable",
+        "hasDefault": "noDefault",
+        "isIdentity": "notIdentity",
+        "description": null,
+        "isGenerated": "notGenerated"
+      },
+      "ps_comment": {
+        "name": "ps_comment",
+        "type": {
+          "scalarType": "varchar"
+        },
+        "nullable": "nullable",
+        "hasDefault": "noDefault",
+        "isIdentity": "notIdentity",
+        "description": null,
+        "isGenerated": "notGenerated"
+      },
+      "ps_partkey": {
+        "name": "ps_partkey",
+        "type": {
+          "scalarType": "int4"
+        },
+        "nullable": "nonNullable",
+        "hasDefault": "noDefault",
+        "isIdentity": "notIdentity",
+        "description": null,
+        "isGenerated": "notGenerated"
+      },
+      "ps_suppkey": {
+        "name": "ps_suppkey",
+        "type": {
+          "scalarType": "int4"
+        },
+        "nullable": "nullable",
+        "hasDefault": "noDefault",
+        "isIdentity": "notIdentity",
+        "description": null,
+        "isGenerated": "notGenerated"
+      },
+      "ps_availqty": {
+        "name": "ps_availqty",
+        "type": {
+          "scalarType": "int4"
+        },
+        "nullable": "nullable",
+        "hasDefault": "noDefault",
+        "isIdentity": "notIdentity",
+        "description": null,
+        "isGenerated": "notGenerated"
+      },
+      "ps_supplycost": {
+        "name": "ps_supplycost",
+        "type": {
+          "scalarType": "numeric"
+        },
+        "nullable": "nullable",
+        "hasDefault": "noDefault",
+        "isIdentity": "notIdentity",
+        "description": null,
+        "isGenerated": "notGenerated"
+      }
+    },
+    "tableName": "partsupp",
+    "schemaName": "xtdb",
+    "description": null,
+    "foreignRelations": {},
+    "uniquenessConstraints": {
+      "partsupp_pkey": [
+        "ps_partkey"
+      ]
+    }
+  },
+  "xtdb_supplier": {
+    "columns": {
+      "s_name": {
+        "name": "s_name",
+        "type": {
+          "scalarType": "bpchar"
+        },
+        "nullable": "nullable",
+        "hasDefault": "noDefault",
+        "isIdentity": "notIdentity",
+        "description": null,
+        "isGenerated": "notGenerated"
+      },
+      "s_dummy": {
+        "name": "s_dummy",
+        "type": {
+          "scalarType": "varchar"
+        },
+        "nullable": "nullable",
+        "hasDefault": "noDefault",
+        "isIdentity": "notIdentity",
+        "description": null,
+        "isGenerated": "notGenerated"
+      },
+      "s_phone": {
+        "name": "s_phone",
+        "type": {
+          "scalarType": "bpchar"
+        },
+        "nullable": "nullable",
+        "hasDefault": "noDefault",
+        "isIdentity": "notIdentity",
+        "description": null,
+        "isGenerated": "notGenerated"
+      },
+      "s_acctbal": {
+        "name": "s_acctbal",
+        "type": {
+          "scalarType": "numeric"
+        },
+        "nullable": "nullable",
+        "hasDefault": "noDefault",
+        "isIdentity": "notIdentity",
+        "description": null,
+        "isGenerated": "notGenerated"
+      },
+      "s_address": {
+        "name": "s_address",
+        "type": {
+          "scalarType": "varchar"
+        },
+        "nullable": "nullable",
+        "hasDefault": "noDefault",
+        "isIdentity": "notIdentity",
+        "description": null,
+        "isGenerated": "notGenerated"
+      },
+      "s_comment": {
+        "name": "s_comment",
+        "type": {
+          "scalarType": "varchar"
+        },
+        "nullable": "nullable",
+        "hasDefault": "noDefault",
+        "isIdentity": "notIdentity",
+        "description": null,
+        "isGenerated": "notGenerated"
+      },
+      "s_suppkey": {
+        "name": "s_suppkey",
+        "type": {
+          "scalarType": "int4"
+        },
+        "nullable": "nonNullable",
+        "hasDefault": "noDefault",
+        "isIdentity": "notIdentity",
+        "description": null,
+        "isGenerated": "notGenerated"
+      },
+      "s_nationkey": {
+        "name": "s_nationkey",
+        "type": {
+          "scalarType": "int4"
+        },
+        "nullable": "nullable",
+        "hasDefault": "noDefault",
+        "isIdentity": "notIdentity",
+        "description": null,
+        "isGenerated": "notGenerated"
+      }
+    },
+    "tableName": "supplier",
+    "schemaName": "xtdb",
+    "description": null,
+    "foreignRelations": {},
+    "uniquenessConstraints": {
+      "supplier_pkey": [
+        "s_suppkey"
+      ]
+    }
+  }
+}
