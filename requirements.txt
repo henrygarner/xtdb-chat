@@ -1,2 +1,7 @@
 git+https://github.com/openai/swarm.git
 psycopg2-binary
+numpy==1.26.4
+pandasai
+pandasai[ggplot]
+pandasai[seaborn]
+pandasai[plotly]
