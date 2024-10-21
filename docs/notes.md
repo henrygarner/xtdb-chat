@@ -16,7 +16,13 @@ Before I proceed, could you please confirm the following:
 - Should I ignore ties when determining the "highest valued single line item" and the "most ordered line items"?
 
 Your clarification will ensure I construct accurate queries.
+```
+
+```
 User: Orders and line items are linked to regions through customers. You should report if there are any ties when reporting the highest valued single line item and the most ordered line items.
+```
+
+```
 SQL Agent: Thank you for the clarification. I will follow these steps:
 
 1. Join the `lineitem`, `orders`, `customer`, and `nation` tables to connect orders and line items to regions through customers.
